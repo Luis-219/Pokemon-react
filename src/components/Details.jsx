@@ -37,32 +37,30 @@ const Details = () =>{
         getpokemon();
     }, [])
     return(
-        <>
-            <div className="pokemon">
-                <div className="img">
-                    <img className= "picture" src={pokemon.img} alt="" />
+        <div className="pokemon">
+        <div className="img">
+            <img className= "picture" src={pokemon.img} alt="" />
+        </div>
+            <div className="dts">
+                <div className="up">
+                    <h1 className="title">#{pokemon.order} <span className="name">{pokemon.name}</span></h1>
                 </div>
-                <div className="dts">
-                    <div className="up">
-                        <h1 className="title">#{pokemon.order} <span className="name">{pokemon.name}</span></h1>
-                    </div>
-                    <h3 className="add">Experiencia base: <span className="sub">{pokemon.base_xp}</span></h3>
-                    <h3 className="add">Altura: <span className="sub">{pokemon.height}</span></h3>
-                    <h3 className="add">Habilidades:</h3>
-                    {
-                        pokemon.abilities?.map((ab) => {
-                            return <h3 className="sub">#{ab}</h3>
-                        })
-                    }
-                    <h3 className="add">Tipos:</h3>
-                    {
-                        pokemon.types?.map((ty) => {
-                            return <h3 className="sub">#{ty}</h3>
-                        })
-                    }
-                </div>
+                <h3 className="add">Experiencia base: <span className="sub">{pokemon.base_xp}</span></h3>
+                <h3 className="add">Altura: <span className="sub">{pokemon.height}</span></h3>
+                <h3 className="add">Habilidades:</h3>
+                {
+                    pokemon.abilities?.map((ab) => {
+                        return <h3 className="sub">#{ab}</h3>
+                    })
+                }
+                <h3 className="add">Tipos:</h3>
+                {
+                    pokemon.types?.map((ty) => {
+                        return <h3 className="sub">#{ty}</h3>
+                    })
+                }
             </div>
-        </>
+        </div>
     );
 
 }

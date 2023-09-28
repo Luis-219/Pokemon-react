@@ -1,8 +1,5 @@
-# React + Vite
+# React Pokemon APP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Para el desarrollo de la aplicación se hizo uso de React Framework y también se usó Vite.
+- Se instaló react-router-dom para un mejor manejo de las rutas, que en este programa fueron la vista de lista de pokemons y la vista de los detalles de cada elegido
+- Para desplegar en localhost, se puede realizar utilizando el comando "npm run dev", el cual le brindará el siguiente link  http://127.0.0.1:3000/

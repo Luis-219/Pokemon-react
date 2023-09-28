@@ -38,3 +38,13 @@
 .sub{
     text-transform: capitalize;
 }
+
+@media only screen and (max-width: 950px) {
+    .img .picture{
+        background-color: white;
+        padding: 7.5%;
+        height: 250px;
+        width: 250px;
+        border-radius: 25px;
+    }
+}
